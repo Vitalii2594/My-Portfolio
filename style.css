@@ -1,13 +1,13 @@
 /* Resetowanie stylów */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
 }
 
 /* Container */
@@ -45,6 +45,18 @@ body {
 /* Sekcje */
 section {
     margin-bottom: 20px;
+    opacity: 0; /* Ukryj sekcje na początku */
+    transform: translateY(20px); /* Przesunięcie w dół */
+    animation: fadeInUp 0.5s forwards; /* Animacja */
+    animation-delay: 0.2s; /* Opóźnienie animacji */
+}
+
+/* Animacja Fade In Up */
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* Ujawnienie */
+        transform: translateY(0); /* Przywrócenie do pierwotnej pozycji */
+    }
 }
 
 section h2 {
@@ -55,21 +67,33 @@ section h2 {
     padding-bottom: 5px;
 }
 
-.education-item, .experience-item {
+.education-item,
+.experience-item {
     border: 1px solid #e0e0e0;
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
+    background-color: #f9f9f9; /* Tło dla sekcji */
 }
 
-.education-item h3, .experience-item h3 {
+.education-item h3,
+.experience-item h3 {
     font-size: 1.5em;
     color: #333;
 }
 
-.education-item p, .experience-item p {
+.education-item p,
+.experience-item p {
     font-size: 1.1em;
     margin: 5px 0;
+}
+
+/* Linie oddzielające sekcje */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 20px 0;
 }
 
 /* Umiejętności */
@@ -87,4 +111,10 @@ section h2 {
 .skills li {
     margin: 5px 0;
     font-size: 1.1em;
+}
+
+/* Tło dla całej strony */
+body {
+    background-color: #f4f4f4;
+    padding: 20px; /* Dodatkowa przestrzeń w obrębie body */
 }
