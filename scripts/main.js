@@ -1,3 +1,4 @@
+// scripts/main.js
 document.addEventListener('DOMContentLoaded', function() {
     // Custom cursor
     const cursor = document.querySelector('.cursor');
@@ -5,6 +6,21 @@ document.addEventListener('DOMContentLoaded', function() {
         document.addEventListener('mousemove', (e) => {
             cursor.style.left = e.clientX + 'px';
             cursor.style.top = e.clientY + 'px';
+        });
+
+        // Change cursor on hover interactive elements
+        const interactiveElements = document.querySelectorAll('a, button, input, textarea, .project-card');
+        interactiveElements.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.classList.add('cursor-hover');
+                cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                cursor.style.background = 'rgba(99, 102, 241, 0.5)';
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.classList.remove('cursor-hover');
+                cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+                cursor.style.background = 'rgba(59, 130, 246, 0.5)';
+            });
         });
     }
 
@@ -62,13 +78,39 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Form submission
-    const contactForm = document.querySelector('.contact-form form');
+    const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
+            
+            // Get form values
+            const name = this.querySelector('input[type="text"]').value;
+            const email = this.querySelector('input[type="email"]').value;
+            const message = this.querySelector('textarea').value;
+            
             // Here you would typically send the form data to a server
-            alert('Thank you for your message! I will get back to you soon.');
+            console.log('Form submitted:', { name, email, message });
+            
+            // Show success message
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+            submitBtn.classList.add('bg-secondary');
+            
+            setTimeout(() => {
+                submitBtn.innerHTML = originalText;
+                submitBtn.classList.remove('bg-secondary');
+            }, 3000);
+            
+            // Reset form
             this.reset();
         });
+    }
+
+    // Add wave animation to contact heading
+    const contactHeading = document.querySelector('#contact h2');
+    if (contactHeading) {
+        contactHeading.innerHTML = contactHeading.innerHTML.replace('Touch', 'Touch <span class="wave-hand">👋</span>');
     }
 });
