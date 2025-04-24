@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vitali Yakubovskyi - Project Manager</title>
+    <title>Vitalii Yakubovskyi - Project Manager | IT Specialist</title>
+    <meta name="description" content="Project Manager with experience in IT project management, implementation of ERP, CRM, LMS, e-commerce systems and expansion of website functionality.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -22,18 +23,29 @@
                     animation: {
                         'float': 'float 6s ease-in-out infinite',
                         'pulse-slow': 'pulse 6s infinite',
+                        'wave': 'wave 2s linear infinite',
                     },
                     keyframes: {
                         float: {
                             '0%, 100%': { transform: 'translateY(0)' },
                             '50%': { transform: 'translateY(-10px)' },
+                        },
+                        wave: {
+                            '0%': { transform: 'rotate(0deg)' },
+                            '10%': { transform: 'rotate(14deg)' },
+                            '20%': { transform: 'rotate(-8deg)' },
+                            '30%': { transform: 'rotate(14deg)' },
+                            '40%': { transform: 'rotate(-4deg)' },
+                            '50%': { transform: 'rotate(10deg)' },
+                            '60%': { transform: 'rotate(0deg)' },
+                            '100%': { transform: 'rotate(0deg)' },
                         }
                     }
                 }
             }
         }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
@@ -55,28 +67,48 @@
                 <div class="hidden md:flex space-x-8">
                     <a href="#about" class="hover:text-primary transition-colors">About</a>
                     <a href="#experience" class="hover:text-primary transition-colors">Experience</a>
+                    <a href="#skills" class="hover:text-primary transition-colors">Skills</a>
                     <a href="#projects" class="hover:text-primary transition-colors">Projects</a>
                     <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
                 </div>
-                <button class="md:hidden text-xl">
+                <button class="md:hidden text-xl menu-toggle">
                     <i class="fas fa-bars"></i>
                 </button>
+            </div>
+            <!-- Mobile menu -->
+            <div class="nav-links md:hidden hidden mt-4 space-y-4 pb-4">
+                <a href="#about" class="block hover:text-primary transition-colors">About</a>
+                <a href="#experience" class="block hover:text-primary transition-colors">Experience</a>
+                <a href="#skills" class="block hover:text-primary transition-colors">Skills</a>
+                <a href="#projects" class="block hover:text-primary transition-colors">Projects</a>
+                <a href="#contact" class="block hover:text-primary transition-colors">Contact</a>
             </div>
         </nav>
 
         <div class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-12 md:mb-0 animate-fade-in">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Vitali Yakubovskyi</h1>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Vitalii Yakubovskyi</h1>
                 <h2 class="text-2xl md:text-3xl font-semibold text-gray-300 mb-6">Project Manager / IT Project Manager</h2>
-                <p class="text-lg text-gray-300 mb-8 max-w-lg">Specializing in Agile/Scrum team management, process optimization and technology integration.</p>
+                <p class="text-lg text-gray-300 mb-8 max-w-lg">Specializing in Agile/Scrum team management, process optimization and technology integration. Implementing ERP, CRM, LMS, e-commerce systems and website functionality expansion.</p>
                 <div class="flex flex-wrap gap-4">
                     <a href="#contact" class="px-6 py-3 bg-primary hover:bg-accent text-white rounded-lg font-medium transition-all hover:shadow-lg hover:-translate-y-1">Contact Me</a>
                     <a href="#experience" class="px-6 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white rounded-lg font-medium transition-all hover:-translate-y-1">View Experience</a>
                 </div>
+                <div class="mt-8 flex items-center space-x-4">
+                    <span class="text-gray-300">Connect with me:</span>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/" target="_blank" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary rounded-full transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/" target="_blank" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-primary rounded-full transition-colors">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="md:w-1/2 flex justify-center animate-float">
                 <div class="relative">
-                    <img src="./IMG_20250417_173754_303.jpg" alt="Vitali Yakubovskyi" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-white/20 shadow-2xl z-10 relative">
+                    <img src="./IMG_20250417_173754_303.jpg" alt="Vitalii Yakubovskyi" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-white/20 shadow-2xl z-10 relative">
                     <div class="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-full blur-md opacity-30 animate-pulse-slow z-0"></div>
                     <div class="absolute -inset-4 border-2 border-primary/30 rounded-full animate-spin-slow" style="animation-duration: 20s;"></div>
                 </div>
@@ -95,21 +127,87 @@
             <div class="grid md:grid-cols-2 gap-12">
                 <div class="space-y-6">
                     <p class="text-lg">Project Manager with experience in IT project management, implementation of ERP, CRM, LMS, e-commerce systems and expansion of website functionality.</p>
-                    <p class="text-lg">Through effective stakeholder collaboration, risk and budget control, delivers projects on schedule and according to business requirements, increasing operational efficiency and customer satisfaction.</p>
+                    <p class="text-lg">Specializing in Agile/Scrum team management, process optimization and technology integration. Through effective stakeholder collaboration, risk and budget control, delivers projects on schedule and according to business requirements, increasing operational efficiency and customer satisfaction.</p>
+                    <div class="p-6 bg-gradient-to-br from-primary/5 to-accent/5 rounded-xl border border-gray-200">
+                        <h3 class="text-xl font-bold mb-4 flex items-center">
+                            <i class="fas fa-certificate text-primary mr-2"></i> 
+                            Certifications
+                        </h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Agile Project Management</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Scrum with Kanban 2020</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-2"></i>
+                                <span>First-Time Agile Manager 2. Toolbox</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Agile and Scrum Basics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Excel Master</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-secondary mt-1 mr-2"></i>
+                                <span>ISO 9001:2015 - Quality Management System</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 
                 <div class="space-y-6">
                     <div class="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow">
                         <i class="fas fa-tasks text-2xl text-primary mt-1"></i>
-                        <p>Project Management (Agile/Scrum, Risk analysis)</p>
+                        <div>
+                            <p>Project Management (Agile/Scrum, Risk analysis)</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">Scrum</span>
+                                <span class="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">Kanban</span>
+                                <span class="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">Risk Analysis</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow">
                         <i class="fas fa-laptop-code text-2xl text-primary mt-1"></i>
-                        <p>ERP, CRM, LMS, e-commerce systems implementation</p>
+                        <div>
+                            <p>ERP, CRM, LMS, e-commerce systems implementation</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">ERP</span>
+                                <span class="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">CRM</span>
+                                <span class="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">LMS</span>
+                                <span class="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">e-commerce</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow">
                         <i class="fas fa-code text-2xl text-primary mt-1"></i>
-                        <p>HTML, CSS, JavaScript, API, Git, Docker</p>
+                        <div>
+                            <p>HTML, CSS, JavaScript, API, Git, Docker</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">HTML/CSS</span>
+                                <span class="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">JavaScript</span>
+                                <span class="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">API</span>
+                                <span class="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">Git</span>
+                                <span class="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4 p-4 bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow">
+                        <i class="fas fa-brain text-2xl text-primary mt-1"></i>
+                        <div>
+                            <p>Knowledge of AI technologies</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">AI Integration</span>
+                                <span class="px-2 py-1 bg-primary/10 text-primary rounded-full text-xs">Machine Learning</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,20 +237,263 @@
                             </div>
                         </div>
                         <ul class="space-y-2 list-disc pl-5">
-                            <li>Managing IT projects including ERP, CRM, LMS systems implementation</li>
-                            <li>Leading projects in Agile, Scrum, Kanban methodologies</li>
-                            <li>Administering LMS, CRM, CMS, e-commerce platforms</li>
+                            <li>Managing IT projects including ERP, CRM, LMS systems implementation and website functionality development</li>
+                            <li>Leading projects in Agile, Scrum, Kanban methodologies: sprint planning, daily stand-ups, retrospectives and progress reviews</li>
+                            <li>Administering LMS, CRM, CMS, e-commerce and purchasing platforms</li>
+                            <li>Contacting developers to communicate requirements</li>
+                            <li>Negotiating with IT service providers</li>
+                            <li>Initiating and managing changes in internal processes</li>
+                            <li>Regular reporting of project progress to superiors</li>
                         </ul>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">Agile</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">Scrum</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">Kanban</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">ERP</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">CRM</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">LMS</span>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Additional experience items... -->
+                <!-- DEKRA Deputy Manager -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-4 top-2 w-8 h-8 rounded-full bg-primary border-4 border-white flex items-center justify-center text-white font-bold shadow-lg">2</div>
+                    <div class="bg-white p-6 rounded-xl shadow-md group-hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-1">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold">Deputy Team Manager for Project Implementation</h3>
+                                <h4 class="text-lg text-primary font-medium">DEKRA Polska sp. z o.o.</h4>
+                            </div>
+                            <div class="mt-2 md:mt-0 px-4 py-1 bg-primary/10 text-primary rounded-lg">
+                                <p class="font-semibold">04/2022 - 06/2024</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 list-disc pl-5">
+                            <li>Acting as Project Manager for implementing new functionalities including e-learning modules and advisory tools</li>
+                            <li>Expanding company website functionality, including training schedule implementation and additional features to increase interactivity and accessibility</li>
+                            <li>Creating concepts for features and their operation - developing ideas, appearance and functionality of new modules and presenting them to technical teams</li>
+                            <li>Direct contact with suppliers and developers responsible for implementation, transferring specifications and agreeing technical details</li>
+                            <li>Preparing mockups and functionality prototypes to better illustrate project assumptions and facilitate understanding of requirements by implementation teams</li>
+                            <li>Full coordination of the implementation process - from concept, through planning to supervision of implementation and acceptance of final work results</li>
+                            <li>Supervision of service quality and maintaining high level of customer satisfaction, including constant adaptation of system functions to user needs</li>
+                            <li>Negotiations with service and equipment suppliers, resulting in cost optimization and quality improvement</li>
+                            <li>Regular reporting of project progress to superiors and initiating organizational changes increasing team work efficiency</li>
+                        </ul>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">Project Management</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">UX/UI Design</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">Stakeholder Management</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">Cost Optimization</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- DEKRA Training Specialist -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-4 top-2 w-8 h-8 rounded-full bg-primary border-4 border-white flex items-center justify-center text-white font-bold shadow-lg">3</div>
+                    <div class="bg-white p-6 rounded-xl shadow-md group-hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-1">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold">Training Organization Specialist</h3>
+                                <h4 class="text-lg text-primary font-medium">DEKRA Polska sp. z o.o.</h4>
+                            </div>
+                            <div class="mt-2 md:mt-0 px-4 py-1 bg-primary/10 text-primary rounded-lg">
+                                <p class="font-semibold">09/2021 - 04/2022</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-2 list-disc pl-5">
+                            <li>Conducting training sessions</li>
+                            <li>Organizing, preparing and servicing training, including online training</li>
+                            <li>Updating data and files in databases and on the server</li>
+                            <li>Administrative support for training</li>
+                            <li>Maintaining training documentation</li>
+                            <li>Supervision over the equipment of the Training Team</li>
+                            <li>Reporting to superiors</li>
+                            <li>Service of trainings taking place in DEKRA conference rooms</li>
+                            <li>Support in preparation and organization of other types of educational services</li>
+                            <li>Timely completion of assigned tasks</li>
+                        </ul>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">Training Coordination</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">Documentation</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">Administration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 relative inline-block">
+                Skills & Expertise
+                <span class="absolute bottom-0 left-0 w-1/2 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-cogs text-primary mr-3"></i>
+                        Technical Skills
+                    </h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Project Management (Agile/Scrum)</span>
+                                <span class="text-primary font-semibold">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-primary to-accent h-2.5 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">ERP, CRM, LMS Systems</span>
+                                <span class="text-primary font-semibold">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-primary to-accent h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Web Technologies (HTML, CSS, JS)</span>
+                                <span class="text-primary font-semibold">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-primary to-accent h-2.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Microsoft Office Suite</span>
+                                <span class="text-primary font-semibold">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-primary to-accent h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Project Tools (Jira, Trello, Slack)</span>
+                                <span class="text-primary font-semibold">92%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-primary to-accent h-2.5 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-users text-primary mr-3"></i>
+                        Soft Skills
+                    </h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Team Management</span>
+                                <span class="text-primary font-semibold">94%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-primary to-accent h-2.5 rounded-full" style="width: 94%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Communication & Negotiation</span>
+                                <span class="text-primary font-semibold">93%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-primary to-accent h-2.5 rounded-full" style="width: 93%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Analytical Thinking</span>
+                                <span class="text-primary font-semibold">91%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-primary to-accent h-2.5 rounded-full" style="width: 91%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Time Management</span>
+                                <span class="text-primary font-semibold">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-primary to-accent h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Customer Service</span>
+                                <span class="text-primary font-semibold">92%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-primary to-accent h-2.5 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold mt-12 mb-6 flex items-center">
+                        <i class="fas fa-language text-primary mr-3"></i>
+                        Languages
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="font-medium">Ukrainian (Native)</span>
+                            <div class="flex space-x-1">
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-circle text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-medium">Polish (C2)</span>
+                            <div class="flex space-x-1">
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-circle text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-medium">Russian (C2)</span>
+                            <div class="flex space-x-1">
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-circle text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-medium">English (B1)</span>
+                            <div class="flex space-x-1">
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-circle text-primary"></i>
+                                <i class="fas fa-circle text-gray-300"></i>
+                                <i class="fas fa-circle text-gray-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20">
+    <section id="projects" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 relative inline-block">
                 Key Projects
@@ -167,173 +508,71 @@
                         <h3 class="text-xl font-bold">LMS System Implementation</h3>
                     </div>
                     <div class="p-6">
-                        <p class="mb-4">Implemented Polish subdomain for global LMS with Stripe payment integration.</p>
+                        <p class="mb-4">As Project Manager and Product Owner, I was responsible for implementing the Polish subdomain of a global LMS and modifications to the website.</p>
+                        <p class="mb-4">I created the concept of an e-learning tab that was integrated with the system, improving access to educational materials for users.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">Scrum</span>
                             <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">Jira</span>
                             <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">Stripe</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">LMS</span>
                         </div>
                         <a href="#" class="text-primary font-medium inline-flex items-center hover:text-accent">
-                            View Details <i class="fas fa-arrow-right ml-2"></i>
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
                 </div>
                 
-                <!-- Additional project cards... -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Education & Skills -->
-    <section class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12">
-                <!-- Education -->
-                <div>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-8 relative inline-block">
-                        Education
-                        <span class="absolute bottom-0 left-0 w-1/2 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></span>
-                    </h2>
-                    
-                    <div class="space-y-6">
-                        <div class="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-md">
-                            <i class="fas fa-university text-2xl text-primary mt-1"></i>
-                            <div>
-                                <h3 class="text-xl font-bold">Jagiellonian University</h3>
-                                <p class="text-gray-600">Polish-Ukrainian Studies</p>
-                                <p class="text-sm text-gray-500">2016 - 2020 • Bachelor's Degree</p>
-                            </div>
+                <!-- Training Schedule Project -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="p-6 bg-gradient-to-r from-secondary to-primary text-white flex items-center">
+                        <i class="fas fa-calendar-alt text-3xl mr-4"></i>
+                        <h3 class="text-xl font-bold">Training Schedule Development</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="mb-4">As Project Manager and UX/UI Designer, I designed and implemented the "Training Schedule" section on the website.</p>
+                        <p class="mb-4">I integrated this feature with the CMS system and managed the development team. Using Scrum methodology, I organized sprints, planned tasks and monitored progress.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">Scrum</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">Figma</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">CMS</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">Jira</span>
                         </div>
-                        <!-- Additional education items... -->
+                        <a href="#" class="text-primary font-medium inline-flex items-center hover:text-accent">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
                     </div>
                 </div>
                 
-                <!-- Skills -->
-                <div>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-8 relative inline-block">
-                        Skills
-                        <span class="absolute bottom-0 left-0 w-1/2 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></span>
-                    </h2>
-                    
-                    <div class="space-y-8">
-                        <div>
-                            <h3 class="text-xl font-bold mb-4">Technical Skills</h3>
-                            <div class="space-y-4">
-                                <div>
-                                    <div class="flex justify-between mb-1">
-                                        <span>Project Management</span>
-                                        <span class="text-primary">95%</span>
-                                    </div>
-                                    <div class="w-full bg-gray-200 rounded-full h-2.5">
-                                        <div class="bg-primary h-2.5 rounded-full" style="width: 95%"></div>
-                                    </div>
-                                </div>
-                                <!-- Additional skill bars... -->
-                            </div>
+                <!-- Advisory Section Project -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="p-6 bg-gradient-to-r from-accent to-secondary text-white flex items-center">
+                        <i class="fas fa-hands-helping text-3xl mr-4"></i>
+                        <h3 class="text-xl font-bold">Advisory Section Development</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="mb-4">As Project Manager and UX/UI Designer, I designed and implemented the "Advisory" section on the website.</p>
+                        <p class="mb-4">I integrated this feature with the CMS system and managed the development team. Using Scrum methodology, I organized sprints, planned tasks and monitored progress.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">Scrum</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">Figma</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">CMS</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm font-semibold">UX/UI</span>
                         </div>
-                        
-                        <div>
-                            <h3 class="text-xl font-bold mb-4">Languages</h3>
-                            <div class="space-y-3">
-                                <div class="flex justify-between items-center">
-                                    <span>Ukrainian (Native)</span>
-                                    <div class="flex space-x-1">
-                                        <i class="fas fa-circle text-primary"></i>
-                                        <i class="fas fa-circle text-primary"></i>
-                                        <i class="fas fa-circle text-primary"></i>
-                                        <i class="fas fa-circle text-primary"></i>
-                                        <i class="fas fa-circle text-primary"></i>
-                                    </div>
-                                </div>
-                                <!-- Additional language items... -->
-                            </div>
-                        </div>
+                        <a href="#" class="text-primary font-medium inline-flex items-center hover:text-accent">
+                            View Project <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20">
+    <!-- Education Section -->
+    <section class="py-20">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 relative inline-block">
-                Get In Touch
+                Education & Certifications
                 <span class="absolute bottom-0 left-0 w-1/2 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></span>
             </h2>
             
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="space-y-6">
-                    <div class="flex items-center space-x-4 p-4 hover:bg-gray-100 rounded-lg transition-colors">
-                        <i class="fas fa-envelope text-2xl text-primary"></i>
-                        <a href="mailto:vitaliiyakubovskyi@gmail.com" class="text-lg">vitaliiyakubovskyi@gmail.com</a>
-                    </div>
-                    <div class="flex items-center space-x-4 p-4 hover:bg-gray-100 rounded-lg transition-colors">
-                        <i class="fas fa-phone text-2xl text-primary"></i>
-                        <a href="tel:+48535267308" class="text-lg">+48 535 267 308</a>
-                    </div>
-                    <div class="flex items-center space-x-4 p-4 hover:bg-gray-100 rounded-lg transition-colors">
-                        <i class="fas fa-map-marker-alt text-2xl text-primary"></i>
-                        <span class="text-lg">Warsaw, Poland</span>
-                    </div>
-                    
-                    <div class="flex space-x-4 pt-4">
-                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 hover:bg-primary hover:text-white rounded-full text-gray-700 transition-colors">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 hover:bg-primary hover:text-white rounded-full text-gray-700 transition-colors">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 hover:bg-primary hover:text-white rounded-full text-gray-700 transition-colors">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                    
-                    <a href="assets/CV_Vitalii_Yakubovskyi.pdf" download class="inline-flex items-center px-6 py-3 bg-primary hover:bg-accent text-white rounded-lg font-medium mt-6 transition-all hover:shadow-lg">
-                        <i class="fas fa-download mr-2"></i> Download CV
-                    </a>
-                </div>
-                
-                <div class="bg-white p-6 rounded-xl shadow-md">
-                    <form class="space-y-4">
-                        <div>
-                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                        </div>
-                        <div>
-                            <input type="email" placeholder="Your Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                        </div>
-                        <div>
-                            <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
-                        </div>
-                        <button type="submit" class="w-full px-6 py-3 bg-primary hover:bg-accent text-white rounded-lg font-medium transition-all hover:shadow-lg">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-12 bg-dark text-gray-400">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4 md:mb-0">Vitali Yakubovskyi</div>
-                <div class="flex space-x-6 mb-4 md:mb-0">
-                    <a href="#about" class="hover:text-white transition-colors">About</a>
-                    <a href="#experience" class="hover:text-white transition-colors">Experience</a>
-                    <a href="#projects" class="hover:text-white transition-colors">Projects</a>
-                    <a href="#contact" class="hover:text-white transition-colors">Contact</a>
-                </div>
-                <div class="flex space-x-4">
-                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary hover:text-white rounded-full transition-colors">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 hover:bg-primary hover:text-white rounded-full transition-colors">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
-                <p>&copy; 2024 Vitali Yakubovskyi. All rights reserved.</p>
-            </div
+            <div class="grid md
